@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7e9eb765fb20419d9cb68186119dff0b" Name="Diagram1">
+        <EntityTypeShape EntityType="ReclamosAlcaldiaModel.Ciudadano" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReclamosAlcaldiaModel.Cuadrilla" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReclamosAlcaldiaModel.Funcionario" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReclamosAlcaldiaModel.LogReclamo" Width="1.5" PointX="7.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReclamosAlcaldiaModel.Reclamo" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReclamosAlcaldiaModel.TipoDeReclamo" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReclamosAlcaldiaModel.Ubicacion" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReclamosAlcaldiaModel.Usuario" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReclamosAlcaldiaModel.Vertice" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReclamosAlcaldiaModel.zona" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <AssociationConnector Association="ReclamosAlcaldiaModel.fk_reclamoCiudadano" ManuallyRouted="false" />
+        <AssociationConnector Association="ReclamosAlcaldiaModel.fk_usuarioCiudadano" ManuallyRouted="false" />
+        <AssociationConnector Association="ReclamosAlcaldiaModel.fk_reclamoCuadrilla" ManuallyRouted="false" />
+        <AssociationConnector Association="ReclamosAlcaldiaModel.fk_zonaCuadrilla" ManuallyRouted="false" />
+        <AssociationConnector Association="ReclamosAlcaldiaModel.fk_usuarioFuncionario" ManuallyRouted="false" />
+        <AssociationConnector Association="ReclamosAlcaldiaModel.fk_reclamoRecLog" ManuallyRouted="false" />
+        <AssociationConnector Association="ReclamosAlcaldiaModel.fk_RecLogUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="ReclamosAlcaldiaModel.fk_reclamoTipoRec" ManuallyRouted="false" />
+        <AssociationConnector Association="ReclamosAlcaldiaModel.fk_reclamoUbicacion" ManuallyRouted="false" />
+        <AssociationConnector Association="ReclamosAlcaldiaModel.fk_zonaUbicacion" ManuallyRouted="false" />
+        <AssociationConnector Association="ReclamosAlcaldiaModel.fk_zonaVertice" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
