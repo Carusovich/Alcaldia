@@ -5,18 +5,19 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D78B0330-3A26-4660-9EA5-1F4A8C29A824}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataAccess</RootNamespace>
-    <AssemblyName>DataAccess</AssemblyName>
+    <ProjectGuid>{8F9D03D5-904C-478A-AD04-568D48A9FD8D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsolaPrueba</RootNamespace>
+    <AssemblyName>ConsolaPrueba</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -26,6 +27,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -51,88 +53,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Model\Ciudadano.cs">
-      <DependentUpon>ReclamosAlcaldiaBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Cuadrilla.cs">
-      <DependentUpon>ReclamosAlcaldiaBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Funcionario.cs">
-      <DependentUpon>ReclamosAlcaldiaBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\LogReclamo.cs">
-      <DependentUpon>ReclamosAlcaldiaBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Reclamo.cs">
-      <DependentUpon>ReclamosAlcaldiaBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\ReclamosAlcaldiaBD.Context.cs" />
-    <Compile Include="Model\ReclamosAlcaldiaBD.cs" />
-    <Compile Include="Model\ReclamosAlcaldiaBD.Designer.cs">
-      <DependentUpon>ReclamosAlcaldiaBD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Model\ReclamosAlcaldiaBD1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReclamosAlcaldiaBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\ReclamosAlcaldiaBD1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReclamosAlcaldiaBD.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Model\TipoDeReclamo.cs">
-      <DependentUpon>ReclamosAlcaldiaBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Ubicacion.cs">
-      <DependentUpon>ReclamosAlcaldiaBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Usuario.cs">
-      <DependentUpon>ReclamosAlcaldiaBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Vertice.cs">
-      <DependentUpon>ReclamosAlcaldiaBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\zona.cs">
-      <DependentUpon>ReclamosAlcaldiaBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Persistence\Class1.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\Class1.cs" />
-    <Compile Include="Repository\PruebaConexion.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Model\ReclamosAlcaldiaBD.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ReclamosAlcaldiaBD.Context1.cs</LastGenOutput>
-    </Content>
-    <Content Include="Model\ReclamosAlcaldiaBD.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ReclamosAlcaldiaBD1.cs</LastGenOutput>
-    </Content>
-    <Content Include="obj\Debug\TempPE\Model.ReclamosAlcaldiaBD.Context1.cs.dll" />
-    <Content Include="obj\Debug\TempPE\Model.ReclamosAlcaldiaBD1.cs.dll" />
-    <Content Include="obj\Debug\TempPE\Model.ReclamosAlcaldiaBD1.Designer.cs.dll" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="Model\ReclamosAlcaldiaBD.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ReclamosAlcaldiaBD1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Model\ReclamosAlcaldiaBD.edmx.diagram">
-      <DependentUpon>ReclamosAlcaldiaBD.edmx</DependentUpon>
-    </None>
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Debug\" />
-    <Folder Include="bin\Release\" />
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{D78B0330-3A26-4660-9EA5-1F4A8C29A824}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
