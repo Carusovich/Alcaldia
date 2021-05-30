@@ -52,6 +52,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Mapper\CuadrillaMapper.cs" />
+    <Compile Include="Mapper\LogReclamoMapper.cs" />
+    <Compile Include="Mapper\ReclamoMapper.cs" />
+    <Compile Include="Mapper\TipoDeReclamoMapper.cs" />
+    <Compile Include="Mapper\UbicacionMapper.cs" />
+    <Compile Include="Mapper\UsuarioMapper.cs" />
+    <Compile Include="Mapper\VerticeMapper.cs" />
+    <Compile Include="Mapper\ZonaMapper.cs" />
     <Compile Include="Model\Ciudadano.cs">
       <DependentUpon>ReclamosAlcaldiaBD.tt</DependentUpon>
     </Compile>
